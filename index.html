@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WLAN Geeks LLC — Wi-Fi engineering software</title>
+<meta name="description" content="WLAN Geeks LLC builds professional Wi-Fi and network analysis software, including PCAPAI Desktop.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<style>
+  :root{
+    --ink:#12181f; --ink-2:#41505f; --ink-3:#6b7c8d;
+    --bg:#ffffff; --bg-2:#f4f7fa; --line:#dde5ed;
+    --accent:#0f6fbe; --accent-ink:#ffffff;
+    --max:62rem;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ink:#e8eef5; --ink-2:#a9b8c7; --ink-3:#7d8d9d;
+      --bg:#0d1319; --bg-2:#141d26; --line:#243140;
+      --accent:#4da3e8; --accent-ink:#08111a;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ink:#e8eef5; --ink-2:#a9b8c7; --ink-3:#7d8d9d;
+    --bg:#0d1319; --bg-2:#141d26; --line:#243140;
+    --accent:#4da3e8; --accent-ink:#08111a;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.65; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:var(--max); margin:0 auto; padding:0 1.5rem}
+  header{border-bottom:1px solid var(--line); padding:1.4rem 0}
+  .brand{display:flex; align-items:baseline; gap:.6rem; flex-wrap:wrap}
+  .brand strong{font-size:1.15rem; font-weight:700; letter-spacing:-.01em}
+  .brand span{color:var(--ink-3); font-size:.82rem; font-weight:500}
+  main{padding:3.5rem 0 1rem}
+  h1{
+    font-size:clamp(1.9rem,4.2vw,2.9rem); line-height:1.15; margin:0 0 1rem;
+    letter-spacing:-.02em; text-wrap:balance; font-weight:700;
+  }
+  .lede{font-size:1.12rem; color:var(--ink-2); max-width:44rem; margin:0 0 2.5rem}
+  h2{font-size:1.02rem; text-transform:uppercase; letter-spacing:.07em;
+     color:var(--ink-3); margin:3rem 0 1rem; font-weight:600}
+  p{margin:0 0 1rem; max-width:44rem}
+  a{color:var(--accent)}
+  .grid{display:grid; gap:1rem; grid-template-columns:repeat(auto-fit,minmax(15rem,1fr)); margin:1.25rem 0 0}
+  .card{background:var(--bg-2); border:1px solid var(--line); border-radius:10px; padding:1.25rem}
+  .card h3{margin:0 0 .4rem; font-size:1rem; font-weight:600}
+  .card p{margin:0; color:var(--ink-2); font-size:.94rem}
+  .product{
+    display:flex; gap:1.5rem; align-items:flex-start; flex-wrap:wrap;
+    background:var(--bg-2); border:1px solid var(--line); border-radius:12px;
+    padding:1.6rem; margin-top:1.25rem;
+  }
+  .product div{flex:1 1 22rem; min-width:0}
+  .product h3{margin:0 0 .5rem; font-size:1.25rem; font-weight:700; letter-spacing:-.01em}
+  .btn{
+    display:inline-block; margin-top:.9rem; background:var(--accent); color:var(--accent-ink);
+    text-decoration:none; font-weight:600; padding:.6rem 1.1rem; border-radius:7px; font-size:.94rem;
+  }
+  dl{display:grid; grid-template-columns:auto 1fr; gap:.5rem 1.5rem; margin:1.25rem 0 0; max-width:44rem}
+  dt{color:var(--ink-3); font-size:.9rem}
+  dd{margin:0; font-size:.95rem}
+  footer{border-top:1px solid var(--line); margin-top:3.5rem; padding:1.6rem 0 3rem;
+         color:var(--ink-3); font-size:.87rem}
+  footer p{margin:0 0 .35rem; max-width:none}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap brand">
+    <strong>WLAN Geeks LLC</strong>
+    <span>Wi-Fi engineering software</span>
+  </div>
+</header>
+
+<main class="wrap">
+  <h1>Software for the people who actually fix Wi-Fi.</h1>
+  <p class="lede">
+    WLAN Geeks LLC builds professional analysis tools for wireless and network engineers —
+    software for reading packet captures, diagnosing 802.11 problems, and understanding
+    what a network is really doing.
+  </p>
+
+  <h2>What we build</h2>
+  <div class="product">
+    <div>
+      <h3>PCAPAI Desktop</h3>
+      <p>
+        A packet analyzer built for Wi-Fi. Native protocol dissection, display filters,
+        802.11 decryption, spectrum analysis, RF planning, and AI-assisted troubleshooting —
+        for macOS, Windows and Linux.
+      </p>
+      <a class="btn" href="https://pcapai.app">pcapai.app &rarr;</a>
+    </div>
+  </div>
+
+  <h2>Focus</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Wireless analysis</h3>
+      <p>802.11 dissection, capture validation, and health checks built on measured behaviour rather than rules of thumb.</p>
+    </div>
+    <div class="card">
+      <h3>Network visibility</h3>
+      <p>Protocol decoding, infrastructure inventory, and configuration insight across wired and wireless networks.</p>
+    </div>
+    <div class="card">
+      <h3>RF planning</h3>
+      <p>Coverage modelling, survey import, and access point placement grounded in real antenna patterns.</p>
+    </div>
+  </div>
+
+  <h2>Company</h2>
+  <dl>
+    <dt>Legal entity</dt><dd>WLAN Geeks LLC</dd>
+    <dt>Registered in</dt><dd><!-- TODO Kevin: state of formation, e.g. "Kansas, United States" --></dd>
+    <dt>Address</dt><dd><!-- TODO Kevin: registered business address, exactly as filed --></dd>
+    <dt>Contact</dt><dd><a href="mailto:kevin@wlangeeks.com">kevin@wlangeeks.com</a></dd>
+    <dt>Products</dt><dd><a href="https://pcapai.app">PCAPAI Desktop</a></dd>
+  </dl>
+</main>
+
+<footer class="wrap">
+  <p>&copy; <span id="y">2026</span> WLAN Geeks LLC. All rights reserved.</p>
+  <p>PCAPAI is a product of WLAN Geeks LLC.</p>
+</footer>
+
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
