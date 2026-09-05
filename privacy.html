@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — WLAN Commander</title>
+<meta name="description" content="Privacy policy for the WLAN Commander iOS app from WLAN Geeks LLC.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<style>
+  :root{
+    --ink:#12181f; --ink-2:#41505f; --ink-3:#6b7c8d;
+    --bg:#ffffff; --bg-2:#f4f7fa; --line:#dde5ed;
+    --accent:#0f6fbe; --accent-ink:#ffffff;
+    --max:62rem;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ink:#e8eef5; --ink-2:#a9b8c7; --ink-3:#7d8d9d;
+      --bg:#0d1319; --bg-2:#141d26; --line:#243140;
+      --accent:#4da3e8; --accent-ink:#08111a;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ink:#e8eef5; --ink-2:#a9b8c7; --ink-3:#7d8d9d;
+    --bg:#0d1319; --bg-2:#141d26; --line:#243140;
+    --accent:#4da3e8; --accent-ink:#08111a;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.65; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:var(--max); margin:0 auto; padding:0 1.5rem}
+  header{border-bottom:1px solid var(--line); padding:1.4rem 0}
+  .brand{display:flex; align-items:baseline; gap:.6rem; flex-wrap:wrap}
+  .brand strong{font-size:1.15rem; font-weight:700; letter-spacing:-.01em}
+  .brand span{color:var(--ink-3); font-size:.82rem; font-weight:500}
+  main{padding:3.5rem 0 1rem}
+  h1{
+    font-size:clamp(1.9rem,4.2vw,2.9rem); line-height:1.15; margin:0 0 1rem;
+    letter-spacing:-.02em; text-wrap:balance; font-weight:700;
+  }
+  .lede{font-size:1.12rem; color:var(--ink-2); max-width:44rem; margin:0 0 2.5rem}
+  h2{font-size:1.02rem; text-transform:uppercase; letter-spacing:.07em;
+     color:var(--ink-3); margin:3rem 0 1rem; font-weight:600}
+  p{margin:0 0 1rem; max-width:44rem}
+  a{color:var(--accent)}
+  .grid{display:grid; gap:1rem; grid-template-columns:repeat(auto-fit,minmax(15rem,1fr)); margin:1.25rem 0 0}
+  .card{background:var(--bg-2); border:1px solid var(--line); border-radius:10px; padding:1.25rem}
+  .card h3{margin:0 0 .4rem; font-size:1rem; font-weight:600}
+  .card p{margin:0; color:var(--ink-2); font-size:.94rem}
+  .product{
+    display:flex; gap:1.5rem; align-items:flex-start; flex-wrap:wrap;
+    background:var(--bg-2); border:1px solid var(--line); border-radius:12px;
+    padding:1.6rem; margin-top:1.25rem;
+  }
+  .product div{flex:1 1 22rem; min-width:0}
+  .product h3{margin:0 0 .5rem; font-size:1.25rem; font-weight:700; letter-spacing:-.01em}
+  .btn{
+    display:inline-block; margin-top:.9rem; background:var(--accent); color:var(--accent-ink);
+    text-decoration:none; font-weight:600; padding:.6rem 1.1rem; border-radius:7px; font-size:.94rem;
+  }
+  dl{display:grid; grid-template-columns:auto 1fr; gap:.5rem 1.5rem; margin:1.25rem 0 0; max-width:44rem}
+  dt{color:var(--ink-3); font-size:.9rem}
+  dd{margin:0; font-size:.95rem}
+  footer{border-top:1px solid var(--line); margin-top:3.5rem; padding:1.6rem 0 3rem;
+         color:var(--ink-3); font-size:.87rem}
+  footer p{margin:0 0 .35rem; max-width:none}
+
+  .contact{margin-top:1.25rem; max-width:34rem}
+  .contact .row{display:flex; flex-direction:column; gap:.35rem; margin-bottom:1rem}
+  .contact label{font-size:.88rem; color:var(--ink-2); font-weight:500}
+  .contact input,.contact textarea{
+    font:inherit; font-size:.95rem; color:var(--ink); background:var(--bg);
+    border:1px solid var(--line); border-radius:7px; padding:.55rem .7rem; width:100%;
+  }
+  .contact textarea{resize:vertical; min-height:8rem}
+  .contact input:focus-visible,.contact textarea:focus-visible,.contact button:focus-visible{
+    outline:2px solid var(--accent); outline-offset:2px;
+  }
+  .contact button{
+    font:inherit; font-weight:600; font-size:.95rem; cursor:pointer;
+    background:var(--accent); color:var(--accent-ink);
+    border:0; border-radius:7px; padding:.6rem 1.2rem;
+  }
+  .contact button[disabled]{opacity:.55; cursor:default}
+  .hp{position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden}
+  .status{margin:.9rem 0 0; font-size:.92rem; min-height:1.3em}
+  .status.err{color:#c0392b}
+  :root:not([data-theme="light"]) .status.err{color:#ff8a7a}
+  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .status.err{color:#ff8a7a}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap brand">
+    <strong>WLAN Geeks LLC</strong>
+    <span>Wi-Fi engineering software</span>
+  </div>
+</header>
+
+<main class="wrap">
+  <h1>WLAN Commander — Privacy Policy</h1>
+  <p class="lede">WLAN Commander is a field diagnostic tool for Wi-Fi engineers. It collects a
+  great deal of technical data about wireless networks, and essentially none of it reaches us.
+  This page explains exactly what is gathered, where it is kept, and the few places it can go.</p>
+
+  <p><strong>Last updated:</strong> 5 September 2026</p>
+
+  <h2>The short version</h2>
+  <div class="card">
+    <p>We operate no servers for this app, and it contains no analytics, crash reporting or
+    telemetry of any kind. Everything the app records stays on your device unless you
+    deliberately send it somewhere — and the destinations it can reach are listed below.
+    <strong>WLAN Geeks LLC does not receive your captures, your locations, or any record of
+    your use of the app.</strong></p>
+  </div>
+
+  <h2>What the app collects</h2>
+  <p>WLAN Commander is a network analyser, so most of what it records is about radio
+  equipment rather than about you.</p>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Location</h3>
+      <p>Precise GPS position and altitude, a barometric floor estimate, and whether you were
+      still, walking or driving. Used to tag observations, so a network heard from a moving car
+      is not confused with one heard at a desk. Collected in the background when you are
+      running a survey or capture.</p>
+    </div>
+    <div class="card">
+      <h3>Wi-Fi observations</h3>
+      <p>Beacons, BSSIDs, SSIDs, signal levels, channel and capability information, and
+      captured 802.11 management and control frames. This is the substance of the tool.</p>
+    </div>
+    <div class="card">
+      <h3>Other people&rsquo;s devices</h3>
+      <p>Wi-Fi analysis necessarily observes nearby equipment you do not own. Captures may
+      contain the hardware addresses of third-party devices, the network names they search for,
+      and authentication handshake material broadcast over the air. Handle captures accordingly.</p>
+    </div>
+    <div class="card">
+      <h3>Camera and room geometry</h3>
+      <p>If you use the survey scanner, the camera and LiDAR build a floor plan. No photograph
+      or video is saved or transmitted — only the resulting wall geometry.</p>
+    </div>
+    <div class="card">
+      <h3>Diagnostic imports</h3>
+      <p>If you import an iOS sysdiagnose archive for analysis, it is parsed on your device.
+      These archives contain operating-system and other applications&rsquo; logs; nothing is
+      uploaded.</p>
+    </div>
+    <div class="card">
+      <h3>Credentials</h3>
+      <p>SSH usernames and passwords for your own sensors, and any cloud API credentials you
+      choose to enter, are stored in the iOS Keychain on your device. They are used only to
+      reach the equipment you point the app at.</p>
+    </div>
+  </div>
+
+  <h2>Where data is stored</h2>
+  <p>On your device. Captures, surveys, reports and their sidecar files live in the
+  app&rsquo;s own storage, which is exposed through the Files app so you can move your work
+  where you want it. Deleting the app deletes them.</p>
+
+  <h2>Where data can go</h2>
+  <p>The app makes network connections to these places and no others:</p>
+  <div class="grid">
+    <div class="card">
+      <h3>Your own equipment</h3>
+      <p>SSH and SFTP to the sensors, access points and capture devices you configure. This is
+      the app&rsquo;s main purpose. We are not party to it.</p>
+    </div>
+    <div class="card">
+      <h3>Speed and path tests</h3>
+      <p>If you run the speed test or the multipath lab, the app contacts Cloudflare&rsquo;s
+      public speed endpoints, <span>check.mptcp.dev</span> and <span>1.1.1.1</span>. These
+      measure your connection; they carry no capture data.</p>
+    </div>
+    <div class="card">
+      <h3>Vendor cloud APIs</h3>
+      <p>If you supply credentials for a vendor management cloud, the app talks to that vendor
+      on your behalf to enrich access-point information. Optional, and only with credentials
+      you provide.</p>
+    </div>
+    <div class="card">
+      <h3>Passpoint provisioning</h3>
+      <p>If you open a provisioning link, the app fetches the profile from the address in that
+      link and installs it using Apple&rsquo;s standard Wi-Fi configuration prompt.</p>
+    </div>
+  </div>
+
+  <h2>Emergency-location data</h2>
+  <p>The Location Readiness feature examines how well a network would report a caller&rsquo;s
+  position to emergency services. That data is unusually sensitive, and the app is built so it
+  <strong>cannot leave your device at all</strong> — the restriction is enforced mechanically
+  at build time rather than by policy, and the app is incapable of placing or dialling a call.
+  Reports are local files. Nothing is sent to any location server, and no map tiles are
+  requested, because requesting a map would itself disclose the locations being examined.</p>
+
+  <h2>What we do not do</h2>
+  <p>No advertising. No tracking, and no data shared with data brokers or advertising networks.
+  No analytics or crash-reporting SDKs. No user accounts, and no sign-in. We do not build a
+  profile of you, because we receive nothing with which to build one.</p>
+
+  <h2>This website</h2>
+  <p>If you use the contact form on our home page, the name, email address and message you
+  type are sent to us so we can reply. That is the only personal information this site
+  collects. The site is hosted on GitHub Pages, which records standard server access logs.</p>
+
+  <h2>Children</h2>
+  <p>WLAN Commander is a professional engineering tool and is not directed at children.</p>
+
+  <h2>Your responsibilities</h2>
+  <p>Wireless capture is regulated differently around the world. You are responsible for
+  ensuring you have permission to analyse the networks you point this tool at, and for
+  handling captures — which may contain other people&rsquo;s device identifiers — lawfully.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes materially, the date at the top of this page will change with it.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: <a href="https://wlangeeks.com/#contact">contact us</a>.</p>
+</main>
+
+<footer class="wrap">
+  <p>&copy; <span id="y">2026</span> WLAN Geeks LLC. All rights reserved.</p>
+  <p><a href="/">Home</a></p>
+</footer>
+
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
